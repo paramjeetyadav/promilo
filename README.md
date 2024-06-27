@@ -1,16 +1,36 @@
-# promilo
+# Flutter Project
 
-A new Flutter project.
+## Overview
+This Flutter project is structured to ensure clean code architecture and efficient state management. It leverages the `Provider` package for state management, `Go Router` for navigation with shell routes for a bottom navigation bar, and the `http` package for network services.
 
-## Getting Started
+## Project Structure
+The project is organized into four main folders under the `lib` directory:
 
-This project is a starting point for a Flutter application.
+### 1. Infrastructure
+The `infrastructure` folder contains:
+- **Constants files**: Define constants used throughout the application.
+- **HTTP Service files**: Manage network requests and API interactions.
+- **Common Utils**: Utility functions and classes that are commonly used across the application.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Model
+The `model` folder contains:
+- **Data Models**: Defines the data model for the login response and other data structures used in the app.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 3. Domain
+The `domain` folder contains:
+- **ViewModel files**: Contains business logic and state management using the `Provider` package.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. Presentation
+The `presentation` folder contains:
+- **Widgets**: Common widgets used across different screens.
+- **Screens**: All the UI screens of the application.
+
+## State Management
+The project uses the `Provider` package for state management. Providers are used to manage the state of the application and to make it available throughout the widget tree.
+
+## Routing
+The project uses `Go Router` for handling navigation. Shell routes are implemented for the bottom navigation bar to manage navigation within the app efficiently.
+
+## Networking
+The `http` package is used for network services to handle API requests and responses.
+
